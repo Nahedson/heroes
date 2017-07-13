@@ -18,6 +18,7 @@ const HEROES: Hero[] = [
   { id: 20, name: 'Tornado' }
 ];
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -26,7 +27,7 @@ const HEROES: Hero[] = [
 export class AppComponent {
   title = 'Heroes App';
   heroes = HEROES;
-  selectedHero: Hero = undefined;
+  selectedHero: Hero;
 onSelect(hero: Hero): void {
 this.selectedHero = hero;
 }
