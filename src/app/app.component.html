@@ -3,15 +3,8 @@
   <h1>
     Welcome to {{title}}!!
   </h1>
-  </div>
-<div *ngIf="selectedHero">
-  <h2>Hero {{selectedHero.name}} details </h2>
-  <div><label>id: </label>{{selectedHero.id}}</div>
-  <div>
-    <label>name: </label>
-    <input [(ngModel)]="selectedHero.name" placeholder="name">
-  </div>
 </div>
+<hero-detail [hero]="selectedHero"></hero-detail>
 <div>
   <h2>My Heroes</h2>
     <ul class="heroes">
